@@ -69,7 +69,6 @@ public class PurchaseDAO {
             return previousPurchases;
 
         } catch(Exception e) {
-            System.out.println(e.getMessage());
             throw new Exception(e.getMessage());
         } finally {
             if (connection != null) {
