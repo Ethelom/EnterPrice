@@ -1,0 +1,150 @@
+/* Author: Theodosis Tsaklanos - 8170136 */
+
+.navbar {
+    min-height: 80px;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    font-family: monospace;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar-brand:focus {
+    color: white;
+}
+
+.navbar-toggle {
+    margin-top: 23px;
+    padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 26.5px;
+        padding-bottom: 26.5px;
+        line-height: 27px;
+    }
+}
+
+.navbar-static-top {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#navbar,
+.navbar-static-top {
+    background-color: #315b96;
+}
+
+#navbar a {
+    font-size: 18px;
+    transition: 0.2s;
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: #315b96;
+}
+
+#navbar a:hover {
+    background-color: #282828;
+}
+
+#navbar a:focus {
+    background-color: black;
+}
+
+
+#navbar .active a {
+    color: #315b96;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.navbar-toggle {
+    border: 0;
+}
+
+#three-stripes .icon-bar {
+    background: white;
+}
+
+#three-stripes:hover,
+#three-stripes.is-active {
+    background: white !important;
+    transition: 0.6s all ease;
+}
+
+#three-stripes:hover .icon-bar,
+#three-stripes.is-active .icon-bar {
+    background: #2867b2 !important;
+    transition: 1s all ease;
+}
+
+#three-stripes:focus {
+    background: #315b96;
+}
+
+#three-stripes:focus .icon-bar {
+    background: white;
+}
+
+.dropdown img {
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    margin-top: 17.5px;
+    margin-bottom: 17.5px;
+    border-radius: 50%;
+    border: 2px solid #282828;
+    background: linear-gradient(to right, #315b96 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.3s ease;
+}
+
+.dropdown img:hover {
+    border-color: #282828;
+    background-position: left bottom;
+}
+
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+    background-color: #315b96;
+    color: white;
+    height: 70px;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 3px;
+    
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+
+footer a:focus,
+footer a:hover {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .dropdown img {
+        height: 40px;
+        width: 40px;
+        margin-top: 0;
+        margin-left: 10px;
+    }
+}

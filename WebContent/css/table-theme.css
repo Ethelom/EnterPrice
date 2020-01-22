@@ -1,0 +1,26 @@
+/* Author: Paris Mpampaniotis - 8170080 */
+/* Author: Theodosis Tsaklanos - 8170136 */
+
+.table tr:hover th {
+    background-color: #353535;
+    color: white;
+    transition: 0.2s;
+}
+
+.table tr:hover td {
+    background-color: #353535;
+    color: white;
+    transition: 0.2s;
+}
+
+.table tr:hover a {
+    color: white;
+}
+
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+    outline: none;
+    border: 1px solid #282828;
+    margin-bottom: 0;
+}

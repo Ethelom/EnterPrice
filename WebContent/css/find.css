@@ -1,0 +1,49 @@
+/* Author: Theodosis Tsaklanos - 8170136 */
+h3 {
+    text-align: center;
+    color: #282828;
+}
+
+.half-background {
+    background: url(../wallpapers/background-camera-copyspace-5933224.jpg) no-repeat;
+    background-position: center;
+}
+
+.search {
+    width: 40%;
+    margin: -30px auto;
+}
+
+.has-search .form-control-feedback {
+    right: initial;
+    left: 0;
+    color: #ccc;
+}
+
+input[type="text"] {
+    transition: 1s;
+    outline: none;
+    border: 2px solid #315b96;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+    border-color: #a8ccd7;
+}
+
+.has-search .form-control {
+    padding-right: 12px;
+    padding-left: 34px;
+}
+
+@media (max-width: 1400px) {
+    .search {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .search {
+        width: 90%;
+    }
+}

@@ -1,0 +1,41 @@
+/* Author: Theodosis Tsaklanos - 8170136 */
+label {
+    font-size: 15px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: lightgray;
+    height: 15px;
+    width: 15px;
+    border: 1px solid white;
+}
+
+input[type="checkbox"]:checked {
+    background: #315b96;
+}
+
+input[type="checkbox"]:after {
+    content: '';
+    position: relative;
+    left: 35%;
+    top: 15%;
+    width: 39%;
+    height: 65%;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+
+input[type="checkbox"]:focus {
+    outline: 0;
+}

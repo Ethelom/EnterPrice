@@ -1,0 +1,94 @@
+/* Author: Theodosis Tsaklanos - 8170136 */
+/* Author: Paris Mpampaniotis - 8170080 */
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    background-position: center;
+    background-size: cover;
+}
+
+.cart-container {
+	margin: 0 50px;
+}
+
+.align-middle {
+    vertical-align: middle !important;
+}
+
+.d-inline-block {
+    display: inline-block !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.border-0 {
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid black;
+}
+
+.p-2 {
+    padding: 0.5rem !important;
+}
+
+.py-2 {
+    padding-top: 0.5rem !important;
+}
+
+.px-3 {
+    padding-right: 1rem !important;
+}
+
+.rounded {
+    border-radius: 0.25rem !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.mb-0,
+.my-0 {
+    margin-bottom: 0 !important;
+}
+
+.ml-3,
+.mx-3 {
+    margin-left: 1rem !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+
+.text-dark {
+    color: #202020 !important;
+}
+
+.fa-fire,
+.fa-trash:hover {
+    color: #ae0000 !important;
+}
+
+
+@media screen and (max-width: 492px) {
+	.img-size-sm {
+		width: 70px;
+		height: 70px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.cart-container {
+		margin: 0;
+	}
+
+}

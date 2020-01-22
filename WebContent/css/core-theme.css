@@ -1,0 +1,128 @@
+/* Author: Paris Mpampaniotis - 8170080 */
+/* Author: Theodosis Tsaklanos - 8170136 */
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 70px;
+}
+.enterprice-blue {
+    background: #315b96;
+}
+
+.enterprice-blue:hover {
+    background-color: #194178;
+}
+
+.thumbnail {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+    min-width: 40%;
+    border-radius: 15px;
+    background-color: #f3f3f3;
+    margin-top: 5px;
+    background-color: aliceblue;
+}
+
+.thumbnail-description {
+    min-height: 40px;
+    margin-bottom: 15px;
+}
+
+.thumbnail:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Λειτουργεί για το πρώτο παιδί μόνο */
+.thumbnail > img {
+    transition: 0.4s;
+}
+
+.thumbnail:hover > img {
+    transform: scale(1.03);
+    transition: 0.4s all ease;
+}
+
+.list-group-item {
+    margin: 5px;
+}
+
+.list-group-item:hover {
+    background-color: #353535;
+    color: white;
+}
+
+.img-size-sm {
+    width: 120px;
+    height: 120px;
+}
+
+.img-size-md {
+    width: 150px;
+    height: 150px;
+}
+
+.img-size-lg {
+    width: 200px;
+    height: 200px;
+}
+
+.img-size-xl {
+	width:300px;
+	height:300px;
+}
+
+a {
+    color: #315b96;
+}
+
+a:hover {
+    color: teal;
+}
+
+li > a {
+	color: black;
+}
+
+li:hover > a {
+	color: white;
+}
+
+.btn-round {
+    color: white;
+    border-radius: 15px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-round:hover,
+.btn-round:focus {
+    color: white;
+}
+
+.delete-button {
+	background-color: #d11a2a;
+}
+
+.delete-button:active,
+.delete-button:hover {
+	background-color: #b3000c;
+}
+
+hr {
+    border-top: 1px solid #8c8b8b;
+    margin: 2px 45px;
+}
+
+.form-control {
+	border-radius: 8px;
+}
+
+.dropdown-menu-right > li > a:hover  {
+	background-color: #fcf8e3;
+}
+

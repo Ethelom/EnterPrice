@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    version="2.5">
+  
+	<!-- Application name and a short description -->
+	<display-name>Sample web.xml</display-name>
+	<description>An example of deployment descriptor (web.xml)</description>
+  
+	<!-- Set Session timeout to 30 minutes -->
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+	
+	<!-- error-code related error pages -->
+	
+	<error-page>
+		<error-code>403</error-code>
+		<location>/errorPage.jsp</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/errorPage.jsp</location>
+	</error-page>
+  
+  	<error-page>
+		<error-code>500</error-code>
+		<location>/errorPage.jsp</location>
+	</error-page>
+	
+	<!-- exception-type related error pages -->
+	<error-page>
+		<exception-type>javax.servlet.ServletException</exception-type>
+		<location>/errorPage.jsp</location>
+	</error-page>
+  
+	<!-- Define welcome file list -->
+	<welcome-file-list>
+		<welcome-file>homePage.jsp</welcome-file>
+	</welcome-file-list>
+  
+</web-app>

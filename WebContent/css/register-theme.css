@@ -1,0 +1,188 @@
+/* Author: Theodosis Tsaklanos - 8170136 */
+/* Author: Paris Mpampaniotis - 8170080 */
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    background: url(../wallpapers/wallpaper-3.jpg) fixed no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #999;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.scene {
+    border: 0;
+    margin-top: 10px;
+}
+
+
+.container {
+    width: 50%;
+    padding: 30px 60px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    border-radius: 35px;
+    background-color: aliceblue;
+}
+
+input {
+    border: 0;
+    background: 0;
+    outline: 0;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 60px;
+    border-bottom: 2px solid black;
+    border-radius: 0px;
+    box-shadow: none;
+    color: rgb(30, 30, 30);
+    transition: 0.35s all ease;
+}
+
+input:focus, .select:focus {
+    border-bottom: 2px solid #8b0000;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.signup-control {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.btn {
+    color: white;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    border-radius: 24px;
+    outline: none;
+    margin-bottom: 20px;
+    width: 50%;
+    font-size: 20px;
+    padding: 6px;
+}
+
+.btn:hover {
+    color: white;
+    background: #194178;
+}
+
+.btn:active:focus {
+    outline: none;
+}
+
+::placeholder {
+    font-size: 18px;
+}
+
+
+.card-container {
+    display: grid;
+    perspective: 700px;
+}
+
+.card-flip {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-template-areas: "frontAndBack";
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+}
+
+.card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.front {
+    grid-area: frontAndBack;
+}
+
+.back {
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+}
+
+.card-flip.flip {
+    transform: rotateY(-180deg);
+}
+
+.alert {
+	border-radius: 10px;
+}
+
+.select {
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	box-shadow: none !important;
+	font-size: 18px;
+	border-bottom: 2px solid black;
+	outline:0px;
+	margin-bottom:60px;
+	background:inherit;
+	border-radius: 0px
+}
+
+ select option {
+ 	background: #353535;
+ 	color: white;
+ }
+
+
+@media (max-width: 768px) {
+    input {
+        margin-bottom: 40px;
+    }
+    
+    .select {
+    	margin-bottom: 40px;
+    }
+
+    .container {
+        padding: 5px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn {
+        width: 100%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    input {
+        font-size: 12px;
+        border-bottom: 1px solid black;
+    }
+    
+    .select {
+    	font-size: 12px;
+    	border-bottom: 1px solid black;
+    }
+
+    input:focus {
+        border-bottom: 1px solid #2867b2;
+    }
+}

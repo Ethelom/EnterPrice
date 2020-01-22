@@ -1,0 +1,113 @@
+/* Author: Theodosis Tsaklanos - 8170136 */
+/* Author: Paris Mpampaniotis - 8170080 */
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    background: url(../wallpapers/calculator-1680905_1920.jpg) fixed no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+input {
+    border: 0;
+    background: 0;
+    outline: 0;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 60px;
+    border-bottom: 2px solid black;
+    border-radius: 0px;
+    box-shadow: none;
+    color: rgb(30, 30, 30);
+    transition: 0.35s all ease;
+}
+
+::placeholder {
+    font-family: sans-serif, "Font Awesome\ 5 Free";
+    font-weight: 550;
+}
+
+input:focus {
+    border-bottom: 2px solid #315b96;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.signup-control {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.card-payment-block {
+    display: block;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    /*    
+    width: 60px;
+    height: 34px;
+    */
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(200, 200, 200);
+    transition: 0.2s;
+    border-radius: 36px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.2s;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + .slider {
+    background-color: #315b96;
+}
+
+
+input[type="checkbox"]:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.icon-container {
+    margin: 40px 0;
+    font-size: 20px;
+}
+
+@media (max-width:1200px) {
+    ::placeholder {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:992px) {
+    ::placeholder {
+        font-size: 16px;
+    }
+}

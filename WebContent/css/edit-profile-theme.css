@@ -1,0 +1,22 @@
+/* Author: Theodosis Tsaklanos - 8170136 
+   Author: Paris Mpampaniotis - 8170080 
+*/
+.avatar {
+     vertical-align: middle;
+     width: 68px;
+     height: 68px;
+     border-radius: 50%;
+     margin: 15px;
+     border: 3px solid #315b96;
+     transition: 0.3s;
+     cursor: pointer;
+ }
+ 
+ .avatar.activated {
+  border: 3px solid darkorange;
+ }
+ 
+ select option {
+ 	background: #353535;
+ 	color: white;
+ }
