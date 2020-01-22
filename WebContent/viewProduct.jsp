@@ -134,7 +134,6 @@ if(request.getParameter("productName") != null) {
                                         <%
                                         for(Map.Entry<String, String> specsPair : product.getSpecs().entrySet()) {
                                             if(specsPair.getValue() == null) {
-                                                System.out.println(specsPair);
                                                 continue;
                                             }
                                         %>
@@ -170,7 +169,7 @@ if(request.getParameter("productName") != null) {
             <%if(availabilities.size() > 0) { %>
                 <h3>Stores that sell this product:</h3>
                 <%int counter = 0; %>
-                <%for(Supply supply : availabilities) { if(supply == null) { System.out.println("egw"); }%>
+                <%for(Supply supply : availabilities) { %>
                     <div class="thumbnail col-xs-12">
                         <div class="col-xs-12 col-lg-3">
                             <div class="caption text-center">

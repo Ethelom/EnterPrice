@@ -37,7 +37,6 @@ if(request.getParameter("resetFilters") != null) {
     if(answer.equals("yes")) {
         session.removeAttribute("checkedFilters");
     } else {
-        System.out.println("here1");
         throw new Exception("There has been an unexpected violation!");
     }
 }
@@ -66,7 +65,6 @@ if(request.getParameter("subcategory") != null) {
                     if(cameFrom.equals("search")) {
                         products = pk.getRequestedSubcategoryProducts(requestedSubcategory);
                     } else {
-                        System.out.println("here3");
                         throw new Exception("There has been an unexpected violation!");
                     }
                 } else {

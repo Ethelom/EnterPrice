@@ -122,9 +122,7 @@ request.setCharacterEncoding("utf-8");
     } else {
         AddressInfo adInfo = new AddressInfo(country, city, address, zip);
         User customer = new Customer(username, fullname, email, password, adInfo, User.CUSTOMER_DEFAULT_IMAGE);
-        System.out.println(customer.getUsername());
         customer.getDAO().register(customer);
-        System.out.println(customerMessage);
         request.setAttribute("successRegisterMessage", "You have registered successfully. Please login to continue");
         %>
         <jsp:forward page="login.jsp"></jsp:forward>
