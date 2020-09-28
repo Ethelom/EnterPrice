@@ -319,7 +319,7 @@ if(request.getParameter("productName") != null) {
                     <div class="col-xs-12">  
                         <div class="row">
                             <div id="bar-label" class="pull-left">
-                                <div style="height:9px; margin:5px 0;">5 <span class="glyphicon glyphicon-star"></span></div>
+                                <div style="height:9px; margin:5px 0;"><%= i+1 %> <span class="glyphicon glyphicon-star"></span></div>
                             </div>
                             <div class="col-xs-8 col-sm-9 col-lg-10">
                                 <div class="progress" style="margin:8px 0;">
